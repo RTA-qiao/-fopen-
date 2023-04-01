@@ -12,7 +12,7 @@ int main(void)
         "王武",23,78.6f};
     FILE* pf;
     //fopen_s函数第一个参数传入一个指向文件指针的指针;
-    errno_t err = fopen_s(&pf,"test.txt", "a+");
+    errno_t err = fopen_s(&pf,"test.txt", "wb+");
     if (err)
     {
         printf("Error!!");
